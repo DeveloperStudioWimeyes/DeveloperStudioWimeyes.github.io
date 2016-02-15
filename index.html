@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>B</title>
+    <title>Получи военный билет законно!</title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -312,6 +312,7 @@
   </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
           function initMap() {
           var customMapType = new google.maps.StyledMapType([
@@ -340,8 +341,12 @@
       }
 
  </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-       
+    <script>
+          jQuery(document).ready(function($) {
+            var deviceHeight = $(window).height();
+            $(".main-bg").css("height", deviceHeight + "px");
+          });
+    </script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.js"></script>
     <script src="assets/javascripts/main.js"></script>
