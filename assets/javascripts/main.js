@@ -128,7 +128,7 @@ $('#showmap').click(function(event) {
 	    stylers: [
 	      { saturation: -100 },
 	      { gamma: 0.6 },
-	      { lightness: 55 }
+	      { lightness: 15 }
 	    ]
 	  },  
 	  
