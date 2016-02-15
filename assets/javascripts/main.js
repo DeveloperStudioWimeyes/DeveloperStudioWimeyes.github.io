@@ -1,9 +1,4 @@
 jQuery(document).ready(function($) {
-	var deviceHeight = $(window).height();
-	$(".screenBackgr").css("height", deviceHeight + "px");
-	$("#map").css("height", deviceHeight/1.5 +"px");
-});
-jQuery(document).ready(function($) {
       $("#carousel-id").swiperight(function() {  
            $("#carousel-id").carousel('prev');  
          });  
@@ -12,6 +7,9 @@ jQuery(document).ready(function($) {
         });    
     });
 $(document).ready(function() {
+	$('.main-bg').height($(window).height());
+	$('#debug').height($(document).height());
+	$('#debug').hide();
 	initMap();
 	$('ul').mousedown(function (event) { event.preventDefault();});
 	$('button').mousedown(function(event) {
