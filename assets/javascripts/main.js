@@ -7,9 +7,6 @@ jQuery(document).ready(function($) {
         });    
     });
 $(document).ready(function() {
-	$('.main-bg').height($(window).height());
-	$('#debug').height($(document).height());
-	$('#debug').hide();
 	initMap();
 	$('ul').mousedown(function (event) { event.preventDefault();});
 	$('button').mousedown(function(event) {
