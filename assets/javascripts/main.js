@@ -116,9 +116,6 @@ $(document).ready(function() {
 		setTimeout(function(){ $('.thanks').toggle(); }, 4000);
 	});
 });
-function debug(){
-	$('#debug').toggle();
-}
 $('#showmap').click(function(event) {
 	$('#contact').hide();
 	$('#contact_back').show();
@@ -128,7 +125,7 @@ $('#showmap').click(function(event) {
 	    stylers: [
 	      { saturation: -100 },
 	      { gamma: 0.6 },
-	      { lightness: 15 }
+	      { lightness: 55 }
 	    ]
 	  },  
 	  
